@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Iniciar Sesión</h1>
+            <form id="login-form">
+                <div class="textbox">
+                    <input type="text" placeholder="Usuario" name="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Contraseña" name="password" required>
+                </div>
+                <button type="submit" class="btn">Ingresar</button>
+            </form>
+            <div class="separator">o</div>
+            <button class="btn-google" id="google-login">
+                <img src="Assets/imagen/gooles.png" alt="Google Logo"> Iniciar sesión con Google
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

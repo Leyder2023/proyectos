@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.login-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: fadeIn 2s;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.textbox {
+    margin-bottom: 20px;
+}
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background: none;
+    outline: none;
+    font-size: 18px;
+}
+.btn {
+    width: 100%;
+    background: #0cfc04;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #c23321;
+}
+.separator {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #c23321;
+}
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #0cfc04;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.btn-google img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-google:hover {
+    background: #c23321;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .textbox input {
+        font-size: 16px;
+    }
+    
+    .btn, .btn-google {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .login-box {
+        width: 70%;
+        padding: 25px;
+    }
+    
+    .textbox input {
+        font-size: 17px;
+    }
+    
+    .btn, .btn-google {
+        font-size: 17px;
+        padding: 9px;
+    }
+}
